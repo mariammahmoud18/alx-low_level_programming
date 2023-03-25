@@ -9,13 +9,15 @@
 */
 int main(void)
 {
-char c = 97;
+int n = 48;
 
-while (c <= 122)
+while (n < 103)
 {
-if (c != 101 && c != 113)
-putchar(c);
-c++;
+putchar(n);
+if (n == 57)
+n = n + 40;
+else
+n++;
 }
 putchar('\n');
 return (0);
