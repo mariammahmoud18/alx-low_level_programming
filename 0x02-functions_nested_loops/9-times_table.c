@@ -6,10 +6,11 @@
 */
 void times_table(void)
 {
-        int sum;
-        for (int i = 0; i < 9; i++)
+        int sum, i, j;
+        
+        for (i = 0; i < 9; i++)
         {
-                for (int j = 0; j < 9; j++)
+                for (j = 0; j < 9; j++)
                 {
                         sum = i * j;
                         _putchar(sum + '0');
@@ -23,3 +24,4 @@ void times_table(void)
                 }
         }
 }
+
