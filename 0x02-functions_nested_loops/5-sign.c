@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "main.h"
 /**
  * print_sign - checks if a given number  is bigger or less than 0.
  * @n:  number to be checked
