@@ -1,11 +1,10 @@
-#include "main.h"
+#include "stdio.h"
 /**
  * print_sign - checks if a given number  is bigger or less than 0.
- *@c - number to be checked
- *
+ * @n:  number to be checked
  * Return: 1 on greater, -1 on less and 0 on zero.
 */
-int print_sign(int c)
+int print_sign(int n)
 {
 if (n > 0)
 {
@@ -23,4 +22,3 @@ _putchar('0');
 return(0);
 }
 }
-
