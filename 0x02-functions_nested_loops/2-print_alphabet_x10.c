@@ -14,6 +14,7 @@ while(i<10)
 while (c <= 122)
 {
 _putchar(c);
+c++;
 }
 i++;
 }
