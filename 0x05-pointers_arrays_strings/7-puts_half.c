@@ -23,8 +23,8 @@ len2--;
 }
 while (*ptr <= str [len - 1])
 {
-putchar(*ptr);
+_putchar(*ptr);
 *ptr++;
 }
-putchar('\n');
+_putchar('\n');
 }

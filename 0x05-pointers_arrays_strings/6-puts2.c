@@ -13,9 +13,9 @@ int len = strlen(str);
 
 while(*ptr <= str[len - 1])
 {
-putchar(*ptr);
+_putchar(*ptr);
 ptr++;
 ptr++;
 }
-putchar('\n');
+_putchar('\n');
 }
