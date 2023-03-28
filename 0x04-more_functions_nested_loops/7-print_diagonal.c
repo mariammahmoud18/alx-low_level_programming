@@ -15,12 +15,12 @@ for (j = 0; j < n; j++)
 {
 for (i = 0; i < j; i++) 
 {
-putchar(' ');
+_putchar(' ');
 }
-putchar('\\');
-putchar('\n');
+_putchar('\\');
+_putchar('\n');
 }
 }
 else
-putchar('\n');
+_putchar('\n');
 }
