@@ -9,16 +9,5 @@
 
 int _strcmp(char *s1, char *s2)
 {
-int len = strlen(s1);
-int len2 = strlen(s2);
-int i;
-
-for (i = 0; i < len; i++)
-{
-if (s1[i] == s2[i])
-continue;
-else
-return (s1[i] - s2[i]);
-}
-return (0);
+	return (strcmp(s1, s2));
 }
