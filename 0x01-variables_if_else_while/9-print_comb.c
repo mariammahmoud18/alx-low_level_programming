@@ -1,25 +1,22 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
 /**
- * main - print all alphabet letters in lowercase.
- *
- * Return: Always 0.
+* main - print from 0 to 9 using putchar.
+* Return: 0 if succesful
 */
 int main(void)
 {
-int n = 48;
+char i;
 
-while (n <= 57)
+for (i = '0'; i <= '9'; i++)
 {
-putchar((char)n);
-if (n == '57')
-continue;
+if (i == '9')
+{
+putchar(i);
+break;
+}
+putchar(i);
 putchar(',');
 putchar(' ');
-n++;
 }
-putchar('\n');
 return (0);
 }
