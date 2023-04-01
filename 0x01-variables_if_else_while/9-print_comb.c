@@ -5,16 +5,16 @@
 */
 int main(void)
 {
-char i;
+int i;
 
-for (i = '0'; i <= '9'; i++)
+for (i = 0; i <= 9; i++)
 {
-if (i == '9')
+if (i == 9)
 {
-putchar(i);
+putchar(i + '0');
 break;
 }
-putchar(i);
+putchar(i + '0');
 putchar(',');
 putchar(' ');
 }
