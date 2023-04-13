@@ -1,6 +1,4 @@
-#include "main.h"
 #include <stdio.h>
-#include <stdbool.h>
 #include <string.h>
 
 /**
@@ -12,15 +10,18 @@
 
 int main(int argc, char *argv[])
 {
+int num1;
+int num2;
+int mul;
+
 if (argc <= 2)
 {
 printf("Error\n");
 return (1);
 }
-int num1 = atoi(argv[1]);
-int num2 = atoi(argv[2]);
-int sum = num1 * num2;
-
-printf("%d\n", sum);
+num1 = atoi(argv[1]);
+num2 = atoi(argv[2]);
+mul = num1 + num2;
+printf("%d\n", mul);
 return (0);
 }
