@@ -8,7 +8,7 @@
  * Return: 0 if successful or 1 if no entered numbers.
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__((unused)) *argv[])
 {
 int num1;
 int num2;
