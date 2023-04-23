@@ -31,20 +31,5 @@ for (i = len1; i < size; i++)
 s[i] = s2[j];
 j++;
 }
-s[size] = "\0";
 return (s);
-}
-int main(void)
-{
-    char *s;
-
-    s = str_concat("Betty ", "Holberton");
-    if (s == NULL)
-    {
-        printf("failed\n");
-        return (1);
-    }
-    printf("%s\n", s);
-    free(s);
-    return (0);
 }
