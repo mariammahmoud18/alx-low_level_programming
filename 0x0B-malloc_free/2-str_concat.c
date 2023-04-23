@@ -7,7 +7,6 @@
  * str_concat - concate two strings.
  * @s1: first string to be added.
  * @s2: second string to be added.
- * 
  * Return: NULL if error else pointer to newly concated str.
 */
 char *str_concat(char *s1, char *s2)
@@ -22,7 +21,7 @@ if (s1 == NULL)
 len1 = 0;
 else
 len1 = strlen(s1);
-if(s2 == NULL)
+if (s2 == NULL)
 len2 = 0;
 else
 len2 = strlen(s2);
