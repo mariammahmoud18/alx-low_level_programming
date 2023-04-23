@@ -17,6 +17,7 @@ int i;
 int j = 0;
 int len1;
 int len2;
+int size;
 if (s1 == NULL)
 len1 = 0;
 else
@@ -25,7 +26,7 @@ if(s2 == NULL)
 len2 = 0;
 else
 len2 = strlen(s2);
-int size = len1 + len2;
+size = len1 + len2;
 s = malloc(sizeof(char) * (size + 1));
 if (s == NULL)
 return (NULL);
