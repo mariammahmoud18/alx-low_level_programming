@@ -1,0 +1,50 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+/**
+ * str_concat - concate two strings.
+ * @s1: first string to be added.
+ * @s2: second string to be added.
+ * 
+ * Return: NULL if error else pointer to newly concated str.
+*/
+char *str_concat(char *s1, char *s2)
+{
+char *s;
+int i;
+int j = 0;
+int len1 = strlen(s1);
+int len2 = strlen(s2);
+int size = len1 + len2;
+
+s = malloc(sizeof(char)*(size + 1));
+if (s == NULL)
+return (NULL);
+for (i = 0; i < len1; i++)
+{
+s[i] = s1[i];
+}
+for (i = len1; i < size; i++)
+{
+s[i] = s2[j];
+j++;
+}
+s[size] = "\0";
+return (s);
+}
+int main(void)
+{
+    char *s;
+
+    s = str_concat("Betty ", "Holberton");
+    if (s == NULL)
+    {
+        printf("failed\n");
+        return (1);
+    }
+    printf("%s\n", s);
+    free(s);
+    return (0);
+}
