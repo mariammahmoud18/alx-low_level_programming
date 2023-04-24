@@ -15,14 +15,18 @@ char *ptr;
 int i;
 int size;
 int j = 0;
-if (n > strlen(s2))
-n = strlen(s2);
-ptr = malloc(sizeof(char) * (strlen(s1) + n));
-for (i = 0; i < strlen(s1); i++)
+int len1 = strlen(s1);
+int len2 = strlen(s2);
+if (n > len2)
+n = len2;
+ptr = malloc(sizeof(char) * (len1 + n));
+if (ptr == NULL)
+return (NULL);
+for (i = 0; i < len1; i++)
 {
 ptr[i] = s1[i];
 }
-for (i = strlen(s1); i < (strlen(s1) + n); i++ )
+for (i = len1; i < (len1 + n); i++ )
 {
 ptr[i] = s2[j];
 j++;
