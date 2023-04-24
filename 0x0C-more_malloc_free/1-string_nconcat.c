@@ -31,4 +31,4 @@ ptr[i] = s2[j];
 j++;
 }
 return (ptr);
-)
+}
